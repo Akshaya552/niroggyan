@@ -1,0 +1,185 @@
+.doctor-home-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+}
+
+.doct-deta{
+    margin: 0px;
+    font-family: roboto;
+    font-size: 30px;
+    color: darkslategray;
+}
+
+.profile-image{
+    margin-top: 15px;
+    width: 375px;
+    height: 250px;
+    font-family: roboto;
+    color: darkslategrey;
+}
+
+.row-container{
+    display: flex;
+    align-items: center;
+}
+
+.available-success{
+    color: green;
+    font-family: roboto;
+    font-size: 10px;
+    padding-left: 5px;margin: 0px;
+}
+
+.leave{
+    color: purple;
+    font-family: roboto;
+    font-size: 10px;
+    padding-left: 5px;margin: 0px;
+}
+
+.doctor-spec{
+    font-family: roboto;
+    font-size: 16px;
+    color: #000;
+    margin: 0px;
+}
+
+.not-available{
+    color: red;
+    font-family: roboto;
+    font-size: 10px;
+    padding-left: 5px;margin: 0px;
+}
+
+.schedule-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.schedule-heading{
+    font-family: roboto;
+    color: darkslategray;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0px;
+}
+
+.doctor-row-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.schedule-unordered{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.list-schedule{
+    width: 280px;
+    padding: 25px;
+    background-color: #ffff2f1f;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.day-week{
+    font-family: roboto;
+    color: darkslategray;
+    font-size: 17.5px;
+    padding-bottom: 8px;
+    margin: 0px;
+}
+
+.start{
+    font-family: roboto;
+    font-size: 16px;
+    color: darkslategray;
+    margin: 0px;
+}
+
+.trigger-button{
+    background-color: bisque;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: roboto;
+    width: 150px;
+    padding: 10px;
+    color: darkslategrey;
+    margin-top: 15px;
+}
+
+.trigger-plane-button{
+    background-color: transparent;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.popup-container{
+    height: 100vh;
+}
+
+.pop-container{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: auto;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.empty-form-text{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.label{
+    font-family: roboto;
+    padding-bottom: 10px; 
+    font-size: 15px;  
+    color: darkslategray;
+}
+
+.input-box{
+    height: 35px;
+    border: solid 1px darkslategrey;
+    border-radius: 6px;
+    outline: none;
+    font-family: roboto;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: darkslategrey;
+    padding-right: 10px;
+}
+
+.button-submit{
+    align-self: center;
+    width: 100px;
+    background-color: transparent;
+    padding: 10px;
+    border: solid 1px #000;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+}
