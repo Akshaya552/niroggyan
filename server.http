@@ -1,4 +1,4 @@
-GET http://localhost:3000/doctors
+GET http://localhost:3000/doctors?name=&specialization=
 
 ###
 GET http://localhost:3000/doctors/3
