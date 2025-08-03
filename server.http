@@ -13,3 +13,6 @@ Content-Type: application/json
     "email":"krithi@gmail.com",
     "appointment_datetime":"2025-08-12 03:00:00"
 }
+
+###
+GET http://localhost:3000/doctors/schedule/2

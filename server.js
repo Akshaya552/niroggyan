@@ -31,7 +31,7 @@ const initializeDbAndServer = async () => {
 initializeDbAndServer();
 
 app.get('/doctors', async (req, res) => {
-  const {name,specialization} = req.query
+  const {name,specialization} = req.query;
   const doctorsQuery = `SELECT * FROM doctor WHERE name LIKE '%${name}%' AND specialization LIKE '%${specialization}%';`
   const doctors = await db.all(doctorsQuery);
   res.send(doctors);
@@ -75,3 +75,10 @@ app.post('/api/appointments', async (req, res) => {
   }
   }  
 );
+
+app.get('/doctors/schedule/:doctorId/',async (req,res)=>{
+  const {doctorId} = req.params
+  const docScheduleQuery = `SELECT * from appointment where doctor_id= ${doctorId};`
+  const scedh = await db.all(docScheduleQuery);
+  res.send(scedh);
+})
