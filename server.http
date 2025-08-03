@@ -1,0 +1,15 @@
+GET http://localhost:3000/doctors
+
+###
+GET http://localhost:3000/doctors/3
+
+###
+POST http://localhost:3000/api/appointments
+Content-Type: application/json
+
+{
+    "doctor_id" : "4",
+    "patient_name":"Krithi",
+    "email":"krithi@gmail.com",
+    "appointment_datetime":"2025-08-12 03:00:00"
+}
