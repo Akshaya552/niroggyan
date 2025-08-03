@@ -31,8 +31,8 @@ const initializeDbAndServer = async () => {
 initializeDbAndServer();
 
 app.get('/doctors', async (req, res) => {
-  const {} = req.query
-  const doctorsQuery = `SELECT * FROM doctor;`
+  const {name,specialization} = req.query
+  const doctorsQuery = `SELECT * FROM doctor WHERE name LIKE '%${name}%' AND specialization LIKE '%${specialization}%';`
   const doctors = await db.all(doctorsQuery);
   res.send(doctors);
 });
